@@ -64,7 +64,9 @@ table {
  *, *::before,*::after {
      box-sizing: border-box;
  }
-
+body {
+    
+}
  .mod-container {
     max-width: 80%;
      margin: 0 auto;
@@ -82,9 +84,14 @@ table {
      font-family: 'Raleway', Helvetica ,sans-serif;
      letter-spacing: 2px;
      color: white;
-     background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
+     background: url('../images/bg.jpeg');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
      line-height: 1.5;
- }
+  }
 
  html {
      font-size: 16px;
@@ -134,7 +141,9 @@ table {
  /*====================
  HEADER
  =====================*/
-
+.header {
+    background-color: rgba(9, 21, 62, 0.756);
+}
 .logo-image {
     padding-bottom: 2rem;
     text-align: left;
@@ -263,6 +272,9 @@ table {
     }
 
     /* Contact section */
+    .contact {
+        background-color: rgba(9, 21, 62, 0.756);
+    }
       .no-bg {
           background-color: transparent;   }
        label {
@@ -312,7 +324,12 @@ table {
     .footer {
         padding: 2rem 0;
         color: rgba(255, 255, 255, 0.125);
+        background-color: rgba(9, 21, 62, 0.756);
     }
+    .footer-padding {
+      padding: 2rem 0;
+    }
+    
 
 
     /* Responsive  Menu ------------------------------------------- */
@@ -377,7 +394,7 @@ table {
     @media all and (max-width:768px){
 
         html {
-            font-size: 10px;
+            font-size: 12px;
         }
 
         .mod-flex {
@@ -407,8 +424,6 @@ table {
             text-align: left;
 
         }
-
-
         .row-description2 .row-image {
             width: 100%;
             text-align: left;
@@ -419,7 +434,23 @@ table {
         }
 
         .row-reverse {
-            flex-direction: column-reverse;
+            flex-direction: column;
+        }
+        .left {
+            text-align: left;
+        }
+        .mod-para {
+            letter-spacing: 0.5px;
+        }
+        .mod-circle{
+            padding: 0.5rem;
+        }
+        .responsive-menu {
+            width: 50%;
+            left: 22%;
+        }
+        .logo-image i {
+            padding-top: 10px;
         }
 
 
